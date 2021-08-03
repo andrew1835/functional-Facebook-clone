@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+// because you have the Icon prop capitalized, you have essentially created a component within a component (the Icon component within the HeaderIcon component). Very cool. In the Header.js file when you set Icon equal to something, it becomes equal to it (in that case it becomes one of the icons you set it equal to), but it retains all the styling you did for it here
 function HeaderIcon({ Icon, active }) {
     return (
         // on border-b-2, b stands for bottom border and 2 is the width in pixels of that border. 

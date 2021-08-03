@@ -35,6 +35,8 @@ function Header() {
 
 
             {/* Header center */}
+
+            {/* Below  are two different ways to do the same styling for a group of icons. One way is to create a component (here it's called HeaderIcon) and to customize the component, and then declare them multiple times below. The other way is to import all the unique components at the top, declare them all down below (such as ViewGridIcon, ChatIcon ,etc) and then create a custom style component in globals.css that you use for each icon. Both valid*/}
             <div className="flex justify-center flex-grow">
                 <div className="flex space-x-6 md:space-x-2">
                     <HeaderIcon active Icon={HomeIcon} />

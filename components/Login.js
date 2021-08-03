@@ -1,3 +1,6 @@
+// Nexts.js's Image component is an easy way to put in images and has automatic lazy loading
+// the signin is straight from the docs. A lot of the time's it will be on a button, and it will be in the form of a function. So it'll look like onClick = {() => signin()}
+
 import icon from "../public/facebookIcon.png"
 import Image from 'next/image'
 import { signin } from "next-auth/client"

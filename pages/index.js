@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Login from "../components/Login"
 
 
-
+// you're passing in 'session' here, which is taken from the object you return at the bottom of the page (aka props.session)
 export default function Home({ session }) {
   if (!session) {
     return <Login />
