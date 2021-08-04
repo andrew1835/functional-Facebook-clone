@@ -16,9 +16,13 @@ import {
     ChevronDownIcon
 } from "@heroicons/react/solid"
 import HeaderIcon from './HeaderIcon'
+import { signOut, useSession } from "next-auth/client"
 
 
 function Header() {
+
+    const [session] = useSession()
+
     return (
         <div className="flex items-center sticky top-0 z-50 bg-white p-2 lg:px-5 shadow-md ">
 
@@ -51,8 +55,19 @@ function Header() {
 
             {/* Header right */}
             <div className='flex items-center sm:space-x-2 justify-end'>
+
                 {/* Profile picture */}
-                <p className="font-semibold pr-3 whitespace-nowrap">Andrew Anthony</p>
+                <Image
+                    onClick={signOut}
+                    className="rounded-full cursor-pointer"
+                    src={session.user.image}
+                    width="40"
+                    height="40"
+                    layout="fixed"
+                />
+
+
+                <p className="font-semibold pr-3 whitespace-nowrap">{session.user.name}</p>
                 <ViewGridIcon className='icon' />
                 <ChatIcon className='icon' />
                 <BellIcon className='icon' />

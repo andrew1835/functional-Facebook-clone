@@ -2,6 +2,8 @@ import { getSession } from 'next-auth/client'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Login from "../components/Login"
+import Sidebar from "../components/Sidebar"
+import Feed from "../components/Feed"
 
 
 // you're passing in 'session' here, which is taken from the object you return at the bottom of the page (aka props.session)
@@ -10,7 +12,7 @@ export default function Home({ session }) {
     return <Login />
   }
   return (
-    <div>
+    <div className='h-screen bg-gray-100'>
       <Head>
         <title>Facebook Clone</title>
       </Head>
@@ -20,9 +22,12 @@ export default function Home({ session }) {
       {/* Header */}
       <Header />
 
-      <main>
+      <main className="flex">
         {/* Sidebar */}
+        <Sidebar />
         {/* Feed */}
+        <Feed />
+
         {/* Widgets */}
       </main>
     </div>
