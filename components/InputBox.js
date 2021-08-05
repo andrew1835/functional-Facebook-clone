@@ -21,7 +21,7 @@ function InputBox() {
             return
         }
 
-        db.collection("posts").add({
+        db.collection("pots").add({
             message: inputRef.current.value,
             name: session.user.name,
             email: session.user.email,
