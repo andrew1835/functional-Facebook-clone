@@ -1,5 +1,6 @@
 import AndrewSrc from "../public/AndrewPic.png"
 import AndrewProfile from "../public/AndrewProfile.jpeg"
+import Contact from './Contact'
 import { SearchIcon } from "@heroicons/react/outline"
 import { DotsHorizontalIcon, VideoCameraIcon } from "@heroicons/react/solid"
 
@@ -25,6 +26,9 @@ function Widgets() {
                     <DotsHorizontalIcon className='h-6' />
                 </div>
             </div>
+            {contacts.map(contact => {
+                return <Contact key={contact.src} src={contact.src} name={contact.name} />
+            })}
         </div>
     )
 }

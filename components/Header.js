@@ -6,6 +6,8 @@ import {
     PlayIcon,
     ShoppingCartIcon,
     UserGroupIcon,
+    DesktopComputerIcon,
+    TemplateIcon
 
 } from "@heroicons/react/outline"
 import {
@@ -22,9 +24,10 @@ import { signOut, useSession } from "next-auth/client"
 function Header() {
 
     const [session] = useSession()
+    var firstName = session.user.name.split(" ")
 
     return (
-        <div className="flex items-center sticky top-0 z-50 bg-white p-2 lg:px-5 shadow-md ">
+        <div className="flex items-center sticky top-0 z-50 bg-white px-2 lg:px-5 shadow-md ">
 
             {/* Header left */}
             <div className='flex items-center'>
@@ -33,7 +36,7 @@ function Header() {
                 <div className="flex ml-2 items-center rounded-full bg-gray-100 p-2">
                     <SearchIcon className="h-6 w-6 text-gray-600" />
                     {/* took out "flex", which was after md:inline-flex */}
-                    <input className='hidden md:inline-flex ml-2 items-center bg-transparent outline-none placeholder-gray-500 flex-shrink' type="text" placeholder="Search Facebook"></input>
+                    <input className='hidden xl:inline-flex ml-2 items-center bg-transparent outline-none placeholder-gray-500 flex-shrink' type="text" placeholder="Search Facebook"></input>
                 </div>
             </div>
 
@@ -48,7 +51,7 @@ function Header() {
                     <HeaderIcon Icon={PlayIcon} />
                     <HeaderIcon Icon={ShoppingCartIcon} />
                     <HeaderIcon Icon={UserGroupIcon} />
-                    <HeaderIcon Icon={FlagIcon} />
+                    <HeaderIcon Icon={TemplateIcon} />
                 </div>
             </div>
 
@@ -62,13 +65,13 @@ function Header() {
                     onClick={signOut}
                     className="rounded-full cursor-pointer"
                     src={session.user.image}
-                    width="40"
-                    height="40"
+                    width="30"
+                    height="30"
                     layout="fixed"
                 />
 
 
-                <p className="font-semibold pr-3 whitespace-nowrap">{session.user.name}</p>
+                <p className="font-semibold pr-3 whitespace-nowrap">{firstName[0]}</p>
                 <ViewGridIcon className='icon' />
                 <ChatIcon className='icon' />
                 <BellIcon className='icon' />
