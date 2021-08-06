@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 
-function Contact({ key, src, name }) {
+function Contact({ src, name }) {
     return (
         <div className='flex items-center space-x-3 mb-2 relative cursor-pointer hover:bg-gray-200  p-2 rounded-xl'>
             <Image

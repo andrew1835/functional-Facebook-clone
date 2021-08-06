@@ -8,7 +8,6 @@ function Posts({ posts }) {
     const [realtimePosts] = useCollection(
         db.collection("posts").orderBy('timestamp', 'desc')
     )
-    console.log(realtimePosts)
 
     return (
         <div>

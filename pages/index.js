@@ -8,6 +8,7 @@ import Widgets from "../components/Widgets"
 import { db } from '../firebase'
 
 
+
 // you're passing in 'session' here, which is taken from the object you return at the bottom of the page (aka props.session)
 export default function Home({ session, posts }) {
   if (!session) {
@@ -17,6 +18,7 @@ export default function Home({ session, posts }) {
     <div className='h-screen'>
       <Head>
         <title>Facebook Clone</title>
+
       </Head>
 
 
