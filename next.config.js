@@ -3,7 +3,9 @@ module.exports = {
     domains: [
       "platform-lookaside.fbsbx.com",
       "firebasestorage.googleapis.com",
-      "media.gettyimages.com"
+      "media.gettyimages.com",
+      "facebook.com"
+
     ]
   }
 }
