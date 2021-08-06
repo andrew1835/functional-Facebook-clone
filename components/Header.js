@@ -27,14 +27,14 @@ function Header() {
     var firstName = session.user.name.split(" ")
 
     return (
-        <div className="flex items-center sticky top-0 z-50 bg-white px-2 lg:px-5 shadow-md ">
+        <div className="flex items-center sticky top-0 z-50 bg-white px-2 lg:px-4 shadow-md ">
 
             {/* Header left */}
             <div className='flex items-center'>
                 <Image src={icon} alt="Facebook icon" width={40} height={40} layout="fixed" />
 
                 <div className="flex ml-2 items-center rounded-full bg-gray-100 p-2">
-                    <SearchIcon className="h-6 w-6 text-gray-600" />
+                    <SearchIcon className="h-5 w-5 text-gray-500" />
                     {/* took out "flex", which was after md:inline-flex */}
                     <input className='hidden xl:inline-flex ml-2 items-center bg-transparent outline-none placeholder-gray-500 flex-shrink' type="text" placeholder="Search Facebook"></input>
                 </div>

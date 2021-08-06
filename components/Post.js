@@ -9,9 +9,14 @@ function Post({ name, message, postImage, image, timestamp }) {
                     <img className='rounded-full' src={image} width={40} height={40}></img>
                     <div>
                         <p className='font-medium'>{name}</p>
-                        <p className='text-xs text-gray-400'>
-                            {new Date(timestamp?.toDate()).toLocaleString}
+                        {timestamp ? (<p className='text-xs text-gray-400'>
+                            {new Date(timestamp?.toDate()).toLocaleString()}
                         </p>
+                        ) : (
+                            <p className='text-gray-400 text-xs'>Loading...</p>
+                        )
+                        }
+
                     </div>
                 </div>
                 <p className='pt-4'>{message}</p>

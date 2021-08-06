@@ -29,12 +29,17 @@ const stories = [
         src: "https://media.gettyimages.com/photos/actorwriter-larry-david-and-tv-personality-conan-obrien-attend-the-picture-id512952416?s=2048x2048",
         profile: "https://media.gettyimages.com/photos/comedian-conan-obrien-attends-tbs-night-out-at-the-theater-at-the-ace-picture-id534083864?s=2048x2048"
     },
+    {
+        name: "Taylor Swift",
+        src: "https://media.gettyimages.com/photos/kanye-west-jumps-onstage-after-taylor-swift-won-the-best-female-video-picture-id90712947?s=2048x2048",
+        profile: "https://media.gettyimages.com/photos/taylor-swift-attends-the-2019-mtv-video-music-awards-at-prudential-picture-id1170386429?s=2048x2048"
+    }
 ]
 
 function Stories() {
 
     return (
-        <div className="flex justify-center space-x-3 mx-auto">
+        <div className="flex justify-center space-x-2 mx-auto">
             {stories.map(story => {
                 return <StoryCard key={story.src} name={story.name} src={story.src} profile={story.profile} />
             })}
