@@ -13,7 +13,6 @@ const firebaseConfig = {
 
 const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app()
 
-console.log(firebase.apps.length)
 
 const db = app.firestore()
 const storage = firebase.storage()

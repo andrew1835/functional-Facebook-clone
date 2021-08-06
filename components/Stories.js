@@ -15,9 +15,9 @@ const stories = [
         profile: "https://media.gettyimages.com/photos/ussouth-korean-actor-steven-yeun-poses-on-may-17-2018-during-a-for-picture-id959445632?s=2048x2048"
     },
     {
-        name: "Nikola Tesla",
-        src: "https://media.gettyimages.com/photos/entwicklung-der-elektrizitt-drahtlose-kraftbertragung-eine-erfindung-picture-id542361847?k=6&m=542361847&s=612x612&w=0&h=I4w0jJnZ9z982x9X2JYmgUPppg79_JT9iGQa7XjBQY0=",
-        profile: "https://media.gettyimages.com/photos/serbianamerican-inventor-and-engineer-nikola-tesla-aged-34-circa-1890-picture-id666932578?s=2048x2048"
+        name: "Malala Yousafzai",
+        src: "https://media.gettyimages.com/photos/malala-yousafzai-speaks-to-thousands-of-guests-at-the-melbourne-and-picture-id1080796472?s=2048x2048",
+        profile: "https://media.gettyimages.com/photos/activist-for-female-education-and-the-youngestever-nobel-prize-is-picture-id530773706?s=2048x2048"
     },
     {
         name: "Peter Parker",
