@@ -18,13 +18,16 @@ import {
     ChevronDownIcon
 } from "@heroicons/react/solid"
 import HeaderIcon from './HeaderIcon'
-import { signOut, useSession } from "next-auth/client"
+// import { signOut, useSession } from "next-auth/client"
+import { useStateValue } from "../StateProvider"
 
 
 function Header() {
+    const [{ user }, dispatch] = useStateValue()
 
-    const [session] = useSession()
-    var firstName = session.user.name.split(" ")
+    console.log(user)
+
+    var firstName = user.displayName.split(" ")
 
     return (
         <div className="flex items-center sticky top-0 z-50 bg-white px-2 lg:px-4 shadow-md ">
@@ -62,9 +65,9 @@ function Header() {
 
                 {/* Profile picture */}
                 <Image
-                    onClick={signOut}
+                    // onClick={signOut}
                     className="rounded-full cursor-pointer"
-                    src={session.user.image}
+                    src={user.photoURL}
                     width="30"
                     height="30"
                     layout="fixed"

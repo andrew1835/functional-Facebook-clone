@@ -3,6 +3,7 @@
 
 import icon from "../public/facebookIcon.png"
 import Image from 'next/image'
+import React from "react"
 // import { signin } from "next-auth/client"
 import { auth, provider } from "../firebase"
 import { actionTypes } from "../reducer"
@@ -15,7 +16,7 @@ function Login() {
 
     const signIn = () => {
         auth.signInWithPopup(provider)
-            .then(result => {
+            .then((result) => {
                 dispatch({
                     type: actionTypes.SET_USER,
                     user: result.user
