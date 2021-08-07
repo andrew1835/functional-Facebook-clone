@@ -6,12 +6,16 @@ import Sidebar from "../components/Sidebar"
 import Feed from "../components/Feed"
 import Widgets from "../components/Widgets"
 import { db } from '../firebase'
+import { useStateValue } from '../StateProvider'
 
 
 
 // you're passing in 'session' here, which is taken from the object you return at the bottom of the page (aka props.session)
 export default function Home({ session, posts }) {
-  if (!session) {
+
+  const [{ user }, dispatch] = useStateValue()
+
+  if (!user) {
     return <Login />
   }
   return (

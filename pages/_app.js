@@ -1,11 +1,14 @@
 import '../styles/globals.css'
 import { Provider } from 'next-auth/client'
+import { StateProvider } from '../StateProvider'
+import reducer, { initialState } from '../reducer'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Provider session={pageProps.session}>
+    <StateProvider initialState={initialState} reducer={reducer}>
       <Component {...pageProps} />
-    </Provider>
+    </StateProvider>
+
   )
 }
 
