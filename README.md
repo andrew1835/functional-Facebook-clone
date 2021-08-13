@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Functional Facebook Clone
 
-## Getting Started
+## What, Why, and HOW
+With this project, I wanted to put my design skills to the test by replicating the design of Facebook. I know it can be tricky for companies to evaluate the skills of entry-level/junior-level engineers. I hope that replicating the design of one of the top websites in the world shows that I have the front-end chops to create simple, professional-looking, responsive web applications. Furthermore, this clone has a fully functional user login through Google, and it also has a fully functional live feed where users can make posts and attach an image/video to each post. I'm really proud of this application, and I hope you enjoy checking it out!
+<br>
 
-First, run the development server:
+<b>Tools:<b>JavaScript, React.js, Next.js, Tailwind CSS, Firestore, Node.js
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# Links
+Link to deployed application: https://functional-facebook-clone.vercel.app/
+<br>
+Link to GitHub repo: https://github.com/andrew1835/functional-Facebook-clone
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Screenshot
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+What the web app looks like when you first load it
+<img src = "./public/readmePictures/FBLogin.png" alt = "Login page">
+<br>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The web app after the user has logged in:
+<img src ='./public/readmePictures/FBHome.png' alt ='Home page'>
+<br>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The web app on a smaller screen size (still on a desktop, the app is optimized for different screen sizes on desktop/laptop):
+<img src = './public/readmePictures/FBMobile.png' alt='Small screen view of home page'>
