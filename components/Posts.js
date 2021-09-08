@@ -14,6 +14,8 @@ function Posts({ posts }) {
         db.collection("posts").orderBy('timestamp', 'desc')
     )
 
+
+
     const [text, setText] = useState(0)
 
     // useEffect(() => {
@@ -167,5 +169,7 @@ function Posts({ posts }) {
 }
 
 export default Posts
+
+
 
 // You npm installed react-firebase-hooks, which lets you use the information from your DB in a much simpler way than normal
